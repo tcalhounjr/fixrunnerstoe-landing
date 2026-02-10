@@ -1,7 +1,8 @@
+'use client';
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
-const Header: React.FC = () => {
+export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -33,6 +34,4 @@ const Header: React.FC = () => {
       </div>
     </header>
   );
-};
-
-export default Header;
+}

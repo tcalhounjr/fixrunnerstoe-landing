@@ -1,7 +1,6 @@
+'use client';
 
-import React from 'react';
-
-const Hero: React.FC = () => {
+export default function Hero() {
   return (
     <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
       {/* Background Video */}
@@ -13,12 +12,10 @@ const Hero: React.FC = () => {
           muted
           playsInline
           className="h-full w-full object-cover"
-          poster="https://images.pexels.com/photos/3061171/pexels-photo-3061171.jpeg?auto=compress&cs=tinysrgb&w=1600"
         >
-          {/* Using a reliable stock video source from Pexels for demonstration */}
-          <source 
-            src="https://player.vimeo.com/external/494252666.hd.mp4?s=346513364f7b247f0d014c5c2d1b54c0e6a10065&profile_id=175&oauth2_token_id=57447761" 
-            type="video/mp4" 
+          <source
+            src="/rock-climber.mp4"
+            type="video/mp4"
           />
         </video>
       </div>
@@ -47,6 +44,4 @@ const Hero: React.FC = () => {
       </div>
     </section>
   );
-};
-
-export default Hero;
+}

@@ -1,14 +1,13 @@
+'use client';
 
-import React from 'react';
-
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
     <footer className="relative bg-black text-white">
       {/* Background Image Area */}
       <div className="relative h-[60vh] flex flex-col items-center justify-center overflow-hidden">
-        <img 
-          src="https://images.pexels.com/photos/1435824/pexels-photo-1435824.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-          alt="Outdoor action background" 
+        <img
+          src="/tennis-player.png"
+          alt="Outdoor action background"
           className="absolute inset-0 w-full h-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/80" />
@@ -48,6 +47,4 @@ const Footer: React.FC = () => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
