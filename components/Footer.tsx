@@ -5,6 +5,7 @@ export default function Footer() {
     <footer className="relative bg-black text-white">
       {/* Background Image Area */}
       <div className="relative h-[60vh] flex flex-col items-center justify-center overflow-hidden">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/tennis-player.png"
           alt="Outdoor action background"
@@ -14,7 +15,7 @@ export default function Footer() {
         
         <div className="relative z-10 text-center px-6">
           <h2 className="text-4xl md:text-7xl font-black italic uppercase tracking-tighter mb-12 drop-shadow-lg">
-            "For the Love of the Game"
+            &quot;For the Love of the Game&quot;
           </h2>
           
           <div className="flex flex-col md:flex-row gap-8 justify-center items-center text-sm font-bold uppercase tracking-widest opacity-80">

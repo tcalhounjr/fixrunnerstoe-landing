@@ -31,13 +31,14 @@ export default function ProductShowcase() {
                 See It In Action
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                Our proprietary micro-vented composite shield provides a secondary skin for high-impact zones, virtually eliminating subungual hematoma (runner's toe) without sacrificing tactile feedback or performance.
+                Our proprietary micro-vented composite shield provides a secondary skin for high-impact zones, virtually eliminating subungual hematoma (runner&apos;s toe) without sacrificing tactile feedback or performance.
               </p>
             </div>
 
             {/* Product Image */}
             <div className="relative w-full">
               <div className="relative bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/majr relief product shots.png"
                   alt="MAJR Relief Product"
