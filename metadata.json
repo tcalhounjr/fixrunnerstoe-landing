@@ -1,0 +1,9 @@
+
+{
+  "name": "Stay In The Game - Performance Protection",
+  "description": "A high-performance landing page for athletic protection products, featuring rock climbing imagery and advanced video integration.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
