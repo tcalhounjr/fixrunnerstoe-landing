@@ -4,27 +4,25 @@ export default function ProductShowcase() {
   return (
     <section className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-6">
 
-          {/* Left: Video */}
-          <div className="relative group">
-            <div className="absolute -inset-2 bg-red-600/20 rounded-2xl scale-95 group-hover:scale-100 transition-transform duration-500"></div>
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-black aspect-video">
+          {/* Left: Video - 3 columns */}
+          <div className="relative group lg:col-span-3 flex items-center">
+            <div className="absolute -inset-2 bg-white/0 hover:bg-red-600/20 rounded-2xl scale-95 group-hover:scale-100 transition-transform duration-500"></div>
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl w-full" style={{ aspectRatio: "16/9" }}>
               <iframe
-                width="100%"
-                height="100%"
                 src="https://www.youtube.com/embed/YQkGlDf8ixM?si=qiOF45VqwjK3bh7n"
                 title="Product Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
-                className="w-full h-full"
+                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: "none" }}
               />
             </div>
           </div>
 
           {/* Right: Product Image & Copy */}
-          <div className="flex flex-col space-y-8">
+          <div className="flex flex-col space-y-8 lg:col-span-2">
             <div>
               <span className="text-red-600 font-black uppercase tracking-[0.3em] text-sm mb-4 block">The Product</span>
               <h2 className="text-4xl lg:text-5xl font-black mb-6 leading-tight uppercase">
@@ -37,11 +35,11 @@ export default function ProductShowcase() {
 
             {/* Product Image */}
             <div className="relative w-full">
-              <div className="relative bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
+              <div className="relative rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-500 group">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/majr relief product shots.png"
-                  alt="MAJR Relief Product"
+                  src="/subungual-hematoma-elite-shield.jpg"
+                  alt="Subungual Hematoma Prevention"
                   className="w-full h-auto object-contain"
                 />
               </div>

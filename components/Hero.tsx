@@ -26,7 +26,7 @@ export default function Hero() {
           STAY IN THE GAME
         </h1>
         <p className="text-white text-xl md:text-3xl font-light tracking-wide mb-10 opacity-90">
-          Prevent runner&apos;s toe. <span className="font-bold">Protect your performance.</span>
+          Protect your toes. <span className="font-bold">Protect your performance.</span>
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
           <button className="w-full md:w-auto px-10 py-5 bg-white text-black font-black text-lg uppercase tracking-widest hover:bg-red-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
