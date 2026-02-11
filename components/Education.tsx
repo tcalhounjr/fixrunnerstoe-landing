@@ -1,6 +1,6 @@
 'use client';
 
-export default function ProductShowcase() {
+export default function Education() {
   return (
     <section className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
