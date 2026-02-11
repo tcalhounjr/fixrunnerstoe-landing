@@ -14,14 +14,15 @@ export default function Header() {
   }, []);
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-black/90 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'
-      }`}
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black/90 backdrop-blur-md py-4 shadow-lg' : 'bg-transparent py-6'
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <div className="text-white font-black text-2xl tracking-tighter">
-          ELITE<span className="text-red-600">SHIELD</span>
+        <div className="text-2xl font-black uppercase tracking-tighter">
+          <span className="text-white">ELITE</span>
+          <span className="text-red-600">SHIELD</span>
+          <span className="text-white text-sm align-super">™</span>
         </div>
         <nav className="hidden md:flex space-x-8">
           <a href="#" className="text-white hover:text-red-500 transition-colors uppercase text-sm font-bold">Performance</a>

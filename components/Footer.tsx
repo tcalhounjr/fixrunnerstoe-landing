@@ -30,7 +30,7 @@ export default function Footer() {
       <div className="py-12 border-t border-white/10">
         <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-white font-black text-2xl tracking-tighter">
-            ELITE<span className="text-red-600">SHIELD</span>
+            ELITE<span className="text-red-600">SHIELD</span><span className="text-white text-sm align-super">™</span>
           </div>
           <p className="text-gray-500 text-xs font-medium uppercase tracking-[0.2em]">
             &copy; {new Date().getFullYear()} Elite Performance Protective Technologies. All rights reserved.

@@ -26,7 +26,7 @@ export default function ProductShowcase() {
             <div>
               <span className="text-red-600 font-black uppercase tracking-[0.3em] text-sm mb-4 block">The Product</span>
               <h2 className="text-4xl lg:text-5xl font-black mb-6 leading-tight uppercase">
-                See It In Action
+                Understanding Runner&apos;s Toe
               </h2>
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
                 Our proprietary micro-vented composite shield provides a secondary skin for high-impact zones, virtually eliminating subungual hematoma (runner&apos;s toe) without sacrificing tactile feedback or performance.
