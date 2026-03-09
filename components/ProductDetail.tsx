@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import type { Product, ProductVariant } from '@/types/shopify'
+import { useCart } from '@/context/CartContext'
 
 function formatPrice(amount: string, currencyCode: string): string {
   return new Intl.NumberFormat('en-US', {
@@ -21,6 +22,8 @@ export default function ProductDetail({ product }: ProductDetailProps) {
   const [selectedVariant, setSelectedVariant] = useState<ProductVariant>(
     product.variants[0]
   )
+  const [added, setAdded] = useState(false)
+  const { addItem, isPending } = useCart()
 
   const price = selectedVariant?.price ?? product.priceRange.minVariantPrice
   const compareAtPrice = selectedVariant?.compareAtPrice
@@ -197,15 +200,21 @@ export default function ProductDetail({ product }: ProductDetailProps) {
 
             {/* Add to Cart */}
             <button
-              disabled={!product.availableForSale}
+              disabled={!product.availableForSale || isPending}
+              onClick={async () => {
+                if (!selectedVariant) return
+                await addItem(selectedVariant.id)
+                setAdded(true)
+                setTimeout(() => setAdded(false), 2000)
+              }}
               className={`w-full py-5 font-black text-lg uppercase tracking-widest rounded-full transition-all duration-300 ${
-                product.availableForSale
+                product.availableForSale && !isPending
                   ? 'bg-black text-white hover:bg-red-600 transform hover:-translate-y-0.5'
                   : 'bg-gray-200 text-gray-400 cursor-not-allowed'
               }`}
               data-testid="add-to-cart"
             >
-              {product.availableForSale ? 'Add to Cart' : 'Sold Out'}
+              {isPending ? 'Adding…' : added ? 'Added ✓' : product.availableForSale ? 'Add to Cart' : 'Sold Out'}
             </button>
 
             {/* Description */}
