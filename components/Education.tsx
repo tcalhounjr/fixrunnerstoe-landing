@@ -2,7 +2,7 @@
 
 export default function Education() {
   return (
-    <section className="py-24 bg-white overflow-hidden">
+    <section id="education" className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-6">
 

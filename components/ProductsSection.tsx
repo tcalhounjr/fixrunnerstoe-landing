@@ -8,7 +8,7 @@ export default async function ProductsSection() {
   if (products.length === 0) return null
 
   return (
-    <section className="py-24 bg-black">
+    <section id="products" className="py-24 bg-black">
       <div className="container mx-auto px-6">
 
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">

@@ -29,12 +29,12 @@ export default function Hero() {
           <span className="font-bold">Protect your performance.</span>
         </p>
         <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-          <button className="w-full md:w-auto px-10 py-5 bg-white text-black font-black text-lg uppercase tracking-widest hover:bg-red-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1">
+          <a href="#products" className="w-full md:w-auto px-10 py-5 bg-white text-black font-black text-lg uppercase tracking-widest hover:bg-red-600 hover:text-white transition-all duration-300 transform hover:-translate-y-1 text-center">
             Experience Pro-Level Protection
-          </button>
-          <button className="w-full md:w-auto px-10 py-5 border-2 border-white text-white font-black text-lg uppercase tracking-widest hover:bg-white/10 backdrop-blur-sm transition-all duration-300">
+          </a>
+          <a href="#education" className="w-full md:w-auto px-10 py-5 border-2 border-white text-white font-black text-lg uppercase tracking-widest hover:bg-white/10 backdrop-blur-sm transition-all duration-300 text-center">
             View the Science
-          </button>
+          </a>
         </div>
       </div>
 
